@@ -28,7 +28,7 @@ const Home = ({setSelectedPage}: Props) => {
    {/*Image and main header */}
    <motion.div 
    
-   className='mx-auto w-5/6 items-center justify-center md:h-5/6'
+   className=' md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'
    onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
    >
     {/* main header */}
@@ -58,7 +58,7 @@ const Home = ({setSelectedPage}: Props) => {
          {/* Actions */}
          <motion.div 
          className='mt-8 flex items-center gap-8 '
-         initial = "hidden"
+        initial = "hidden"
         whileInView="visible"
         viewport={{ once:true , amount : 0.5 }}
         transition={{ delay:0.2 , duration:0.5}}
